@@ -1,16 +1,17 @@
+
 <!DOCTYPE html>
 <html lang="es">
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="stylesheet" href="style.css" />
-        <title>DNOO37</title>
+        <title>INICIO</title>
     </head>
     <body>
         <nav>
             <h1><a href="index.html">Lucas Góngora</a></h1>
             <select onchange="location = this.value;">
-                <option value="index.html" selected>INICIO</option>
+                <option value="index.html" selected>INDEX</option>
                 <option value="astrology.html">ASTROLOGY</option>
                 <option value="astronomy.html">ASTRONOMY</option>
                 <option value="earthquakes.html">EARTHQUAKES</option>
@@ -27,10 +28,9 @@
         <script>
             async function estudiantes() {
                 const data = await fetch("https://raw.githubusercontent.com/profesorfaco/dno037-2023-2/main/clase-07/_curso.json");
-                const datosfinos = await data.json();
-                console.log(datosfinos);
-                document.querySelector("blockquote").innerHTML = `${datosfinos[15}.motivo}`;
-                }
+                const datos = await data.json();
+                document.querySelector ("blockquote").innerHTML = `${datos[14].motivo}`   
+            }
                 estudiantes().catch((error) => console.error(error));
         </script>
     </body>

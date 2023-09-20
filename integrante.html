@@ -35,7 +35,7 @@
             var quien = new URLSearchParams(window.location.search).get("lista");
 
             if (quien == null) {
-                window.location.href = "Astrology";
+                window.location.href = "astrology.html";
             } else {
                 estudiantes(quien).catch((error) => console.error(error));
             }
