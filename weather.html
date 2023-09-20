@@ -44,7 +44,6 @@
             }
             cities().catch((error) => console.error(error));
             async function weather(ciudad) {
-                //Aquí se pone el API key de la página, sigo sin entender cómo funciona (revisar para ev.2)//
                 const key = "4cde5c592ac8f0ed565e5d7cee7029f9";
                 const segundo = await fetch("https://api.openweathermap.org/data/2.5/weather?q=" + ciudad + ",cl&units=metric&appid=" + key + "&lang=es");
                 const tiempo = await segundo.json();
