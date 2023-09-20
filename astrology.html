@@ -4,13 +4,13 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="stylesheet" href="style.css" />
-        <title>DNOO37</title>
+        <title>♎</title>
     </head>
     <body>
         <nav>
             <h1><a href="index.html">Lucas Góngora</a></h1>
             <select onchange="location = this.value;">
-                <option value="index.html">INDEX</option>
+                <option value="index.html">INICIO</option>
                 <option value="astrology.html" selected>ASTROLOGY</option>
                 <option value="astronomy.html">ASTRONOMY</option>
                 <option value="earthquakes.html">EARTHQUAKES</option>
@@ -50,20 +50,20 @@
                 respuesta.innerHTML = ``;
                 detalles.innerHTML = ``;
 
-                //Lo que sigue lo saqué de https://www.clara.es/
+                //Lo que sigue lo saqué de https://www.terra.cl/estilo-de-vida/2022/7/16/los-elementos-zodiacales-de-la-astrologia-lo-que-significa-cada-uno-15572.html//
 
                 if (valor == "fuego") {
                     about =
-                        "<em>🔥 TEAM FUEGO (Aries, Leo y Sagitario)</em>: Tienen una forma muy particular de desenvolverse en ambientes laborales. Son individualistas y confían mucho en sus capacidades, lo que en ocasiones puede llegar a hacerlos ver algo arrogantes. Sin embargo, tienen una gran capacidad de motivar a los demás, un instinto infalible y no descansan hasta alcanzar sus objetivos. Si un signo de fuego no se ha hecho aún con el liderazgo en su entorno laboral, pronto se hará con él, puesto que es su posición natural en el zodiaco.";
+                        "<em>🔥 TEAM FUEGO (Aries, Leo y Sagitario)</em>: <br> •Temporada: Los signos de fuego  están asociados con el verano cuando el clima es cálido y seco. <br> •Rasgos:  El elemento fuego representa acción, pasión, creatividad e impulso. Los signos de fuego tienen una chispa distinta sobre su naturaleza. Cada vez que te encuentras con un signo de Fuego, a menudo lo ves haciendo su mejor espectáculo para mostrarlo al mundo. Estos signos son independientes y no les gusta quedarse quietos. Sin embargo, deben tener cuidado con el agotamiento por tanta actividad. Si Aries, Leo o Sagitario se vuelven locos y no se toman un momento para relajarse, inmediatamente sienten su propio calor de agotamiento. <br> •Cómo conectarse con el elemento Fuego:  Una forma de conectarse con el elemento Fuego es meditando cerca de una fuente de calor o llama. Enciende una vela la próxima vez que quieras reflexionar; de inmediato, debes sentir una presencia tranquilizadora. También puede pasar tiempo al aire libre tomando el sol.";
                 } else if (valor == "agua") {
                     about =
-                        "<em>💧 TEAM AGUA (Cáncer, Escorpio y Piscis)</em>: Pueden pasar desapercibidos en el trabajo, pero son esenciales para que todo salga adelante. Son grandes compañeros y se concentran en potenciar las habilidades de los demás. Son muy responsables y trabajadores, aunque a veces pueden llegar a ser muy exigentes consigo mismos. Además, se adaptan con mucha facilidad a los cambios, consiguiendo estar siempre como pez en el agua.";
+                        "<em>💧 TEAM AGUA (Cáncer, Escorpio y Piscis)</em>: <br> •Temporada: Los signos de agua  están asociados con el invierno cuando el clima es frío y húmedo. <br> •Rasgos: El agua representa emociones, intuición y sensibilidad. Los signos de agua están profundamente en contacto con su intuición, así como con las emociones de quienes los rodean. Poseen una enorme cantidad de sentimientos y tienen el don de leer entre cada fina línea, lo que les permite comprender a fondo una situación o persona. Cáncer, Escorpio y Piscis deben tener cuidado al preocuparse demasiado por otras personas. Si se permiten alimentar los problemas de otra persona, sentirán esas mismas emociones y terminarán con un comportamiento destructivo. <br> •Cómo conectarse con el elemento Agua:  Una forma de conectarse con el Agua es estar físicamente cerca de un cuerpo de agua. Puedes meditar mientras te das un baño o mientras nadas en el océano, en un esfuerzo por conectarte contigo mismo. ";
                 } else if (valor == "aire") {
                     about =
-                        "<em>🌀 TEAM AIRE (Géminis, Libra y Acuario)</em>: Son idealistas por naturaleza. Aportan gran entusiasmo y dedicación a aquello que les interesa, aportando ideas renovadoras que pueden cambiar un puesto de trabajo. Son sociables y muy buenos compañeros, pero algo volátiles. Y es que el punto flojo de los signos de aire es que les cuesta ser constante, lo que les complica terminar los proyectos que empiezan.";
-                } else if (valor == "tierra"){
+                        "<em>🌀 TEAM AIRE (Géminis, Libra y Acuario)</em>: <br> •Temporada: Los signos de aire  están asociados con la primavera cuando el clima es cálido y húmedo. <br> •Rasgos: El aire representa la dualidad, el intelecto, la apertura y el pensamiento etéreo. Los signos de aire están en todas partes y en ninguna a la vez. No les gusta estar en un solo lugar todo el tiempo porque su naturaleza curiosa no se lo permite. Hay todo un mundo por descubrir y explorar, y Air Signs se asegurará de hacer precisamente eso. Géminis, Libra y Acuario deben tener cuidado con sus problemas de compromiso innatos. Si pueden aprender a apegarse a una cosa a la vez, se sentirán más realizados. <br> •Cómo conectarse con el elemento Aire: Una de las mejores formas de conectarse con la energía del elemento Aire es encendiendo incienso (o  usando un difusor de aceite esencial ) y observando cómo el humo llena el aire. Otra forma de conectarse es pedirle un deseo a un diente de león y, mientras las semillas vuelan, míralas flotar mientras respiras.";
+                    } else if (valor == "tierra") {
                     about =
-                        "<em>🌱 TEAM TIERRA (Tauro, Virgo, Capricornio)</em>: Son los que más cerca pueden estar de ser adictos al trabajo. Al igual que en otros aspectos de su vida, son prácticos y entregados, pudiendo llegar a ser especialmente exigentes consigo mismo. Dado que son signos particularmente materialistas y terrenales, para los que nacen bajo el elemento de tierra es muy importante mantener una buena posición laboral, y necesitan sentir que sus esfuerzos se ven recompensados de manera tangible.";
+                        "<em>🌱 TEAM TIERRA (Tauro, Virgo, Capricornio)</em>: <br> •Temporada: Los signos de tierra están asociados con el otoño o el otoño cuando el clima es fresco y seco.<br> •Rasgos: La tierra representa sustancia, practicidad, razón y pensamiento realista. Los signos de tierra son prácticos; cuando llega el momento de ponerse a trabajar, harán lo que sea necesario para cumplir con sus tareas. Son sabios y les encanta servir a los demás en tiempos de necesidad. Pero Capricornio, Tauro y Virgo deben tener cuidado de no ser demasiado lógicos. Si piensan demasiado en algo, su mente crea una versión completamente diferente de la situación.<br> •Cómo conectarse con el elemento Tierra: Una forma de conectarse con su elemento Tierra es  pasando tiempo en la naturaleza . Ya sea que esté plantando un jardín o caminando descalzo sobre el césped, se sentirá conectado a tierra y aliviado. Los signos de tierra también pueden beneficiarse enormemente de las plantas de interior para practicar la energía de puesta a tierra.";
                 } else {
                     about = "Diseño y nuevos medios."
                 }

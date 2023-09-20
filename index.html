@@ -25,19 +25,13 @@
             <a href="https://github.com/profesorfaco/dno037-2023-2/tree/main/clase-07">20 de septiembre, 2023</a>
         </footer>
         <script>
-        const alternativas = document.querySelector("header");
-        const detalles = document.querySelector("aside");
-        const respuesta = document.querySelector("main");
-        var datos;
-        
-        async function estudiantes() {
-            const data = await fetch("https://raw.githubusercontent.com/profesorfaco/dno037-2023-2/main/clase-07/_curso.json");
-            datos = await data.json();
-            document.querySelector("blockquote").innerHTML = `${datos[15].motivo}`;
-        }
-        
-        estudiantes().catch((error) => console.error(error));
-        document.querySelector("#loader").style.display = "none";
+            async function estudiantes() {
+                const data = await fetch("https://raw.githubusercontent.com/profesorfaco/dno037-2023-2/main/clase-07/_curso.json");
+                const datosfinos = await data.json();
+                console.log(datosfinos);
+                document.querySelector("blockquote").innerHTML = `${datosfinos[15}.motivo}`;
+                }
+                estudiantes().catch((error) => console.error(error));
         </script>
     </body>
 </html>
